@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 )
 
 func main() {
@@ -11,7 +12,7 @@ func main() {
 		"password": "KznF2ksd!320A.",
 	})
 	if err != nil {
-
+		log.Println(err)
 	}
 
 	fmt.Println(string(value))

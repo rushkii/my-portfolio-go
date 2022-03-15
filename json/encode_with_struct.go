@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 )
 
 type Data struct {
@@ -16,7 +17,7 @@ func main() {
 		Password: "KznF2ksd!320A.",
 	})
 	if err != nil {
-
+		log.Println(err)
 	}
 
 	fmt.Println(string(value))
