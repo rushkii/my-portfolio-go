@@ -21,5 +21,5 @@ func main() {
 		log.Panicln(err)
 	}
 
-	fmt.Println(res.Body())
+	fmt.Println(string(res.Body()))
 }
