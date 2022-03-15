@@ -22,7 +22,7 @@ func main() {
 		"username": "kiizuha",
 		"password": "kiizuha"
 	}`))
-	req.Header.SetMethod("POST")
+	req.Header.SetMethod("POST") // GET, POST, HEAD, OPTIONS, DELETE, PUT, PATCH
 	req.Header.SetContentType("application/json")
 	req.SetRequestURI("https://httpbin.org/post")
 	if err := client.Do(req, res); err != nil {
